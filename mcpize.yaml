@@ -1,0 +1,14 @@
+# MCPize deployment configuration
+name: compliance-watchdog
+entrypoint: server.py
+install: pip install fastmcp httpx
+runtime: python
+transport: http
+port: 8080
+category: security
+tags:
+  - security
+  - compliance
+  - monitoring
+  - watchdog
+description: Autonomous compliance monitoring for AI agents. Companion to Compliance Suite.
